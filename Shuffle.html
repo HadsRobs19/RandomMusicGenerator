@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to Shuffle!</title>
+        <link rel="stylesheet" href="./ShuffleStyles.css"/>
+        <script>
+            var today = new Data();
+            var expires = new Data(today.getTime() + 30 * 24 * 3600 * 1000); // adding 30 days
+
+            function setCookie(name, value){
+                document.cookie=name + "=" + escape(value) + "; path=/; expires=" + expires.toGMTString();
+            }
+            function putCookie(form){
+                setCookie("username", form[0].usrname.value);
+                return true;
+            }
+            
+
+        </script>
+    </head>
+    <body>
+        <header>
+        <!-- <a href="./username.html">Enter</a> -->
+          <div class="movetext"> 
+            <h1>Shuffle</h1>
+          </div>
+            <h2>Art for Your Ears!</h2> 
+        </header>
+        <div class="container">
+            <form action="/username.html" method="post">
+                <h3>Who's Listening?</h3>
+                <div class="squaretext">
+                    <label for="username">username</label>
+                    <input type="text" id="username" name="username" minlength="3" maxlength="15">
+                </div>
+            </form>
+            <div class="enterbutton">
+                <a href="./username.html"><input type="submit" value="Enter"></a>
+            </div>  
+        </div>
+        <canvas id="myCanvas">
+
+        </canvas>
+       <!--<div class="circle">
+            <script src="drawing.js"></script>
+        </div>  -->  
+    </body>
+</html>

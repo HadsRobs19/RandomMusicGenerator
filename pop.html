@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head><meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pop Genre</title>
+        <link rel="stylesheet" href="./GenresStyle.css"/>
+    </head>  
+    <body>
+        <button onclick= 'generateRandomSong("Pop")'>Shuffle</button>
+        <p id ="elements"></p>
+        <p id ="results"></p>
+        <a href="RandomMusicGenerator.js" oncick = "getIframeContent('frameID');"></a>
+        <script src="RandomMusicGenerator.js"></script>
+    </body>
+    <form action="/pop.html" method="POST">
+        <div class="commentarea">
+            <label for="thoughts"><h4>Share your favorite songs and music recommendations!</h4></label>
+            <!-- <input id="thoughts" name="thoughts" type="text" maxlength="1500"> -->
+            <br>
+            <textarea id="thoughts" name="thoughts" rows="7" cols="50" maxlenght="1500"></textarea>
+            <input type="submit" value="Post">
+        </div>
+    </form>
+</html>

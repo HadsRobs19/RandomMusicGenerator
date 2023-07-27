@@ -1,0 +1,248 @@
+:root {
+    --text-color: rgb(41, 63, 139);
+    --border-color: #104a89;
+}
+
+h1 /* Shuffle */ {
+    color: var(--text-color);
+    font-size: 160px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align:center;
+    margin-bottom: 200px;
+    text-shadow: 4px 4px rgb(53, 53, 53);
+    text-shadow: inset 4px 4px rgb(98, 96, 96);
+}
+
+@keyframes moving {
+    from {top: 0px;}
+    to {top: 60px;}
+}
+@-webkit-keyframes moving {
+    from {top: 0px;}
+    to {top: 60px;}
+}
+
+.movetext {
+    animation: moving 5s infinite;
+    -webkit-animation: moving 5s infinite;
+    position: relative;
+    animation-direction:alternate-reverse;
+}
+h2 /*Art for you ears!*/ {
+    color:var(--text-color);
+    font-size:45px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    text-shadow: 4px 4px rgb(71, 70, 70);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h3 /* Who's Listening? */{
+    color:var(--text-color);
+    font-size: 45px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align:center;
+}
+
+.squaretext {
+    z-index: 50;
+    width: 40%;
+    height: 50px;
+    padding-left: 20px;
+    text-align:center;
+    border-style: outset;
+    border-color: var(--border-color);
+    margin-left: 430px;
+} 
+
+form {
+    font-size: 30px;
+    color: var(--text-color);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at 50% 120%, #0e2049, #010606);
+    margin: 20;
+    border-style:outset;
+    border-color: var(--border-color);
+    height:auto;
+    width:auto;
+}
+
+.nextpart h1 /* Hello, What are we feeling? */ {
+    font-size: 80px;
+    padding-left: 270px;
+    padding-right: 370px;
+    margin-left: 70px;
+    animation: moving 5s infinite;
+    -webkit-animation: moving2 5s infinite;
+    position: relative;
+    animation-direction:alternate-reverse;
+}
+
+@keyframes moving2 {
+    from {top: 0px;}
+    to {top: 60px;}
+}
+@-webkit-keyframes moving2 {
+    from {top: 0px;}
+    to {top: 60px;}
+}
+
+.popgenre {
+    font-size: 30px;
+    padding-top: 100px;
+    padding-right:400px;
+    padding-left: 280px;
+    justify-content: space-between;
+    text-shadow: 2px 2px rgb(64, 63, 63);
+    border-style:outset;
+}
+
+.popgenre:hover {
+    border-color:#dd3abf;
+}
+
+.rockgenre {
+    font-size: 30px;
+    padding-top: 100px;
+    padding-right:400px;
+    padding-left: 280px;
+    justify-content: space-between;
+    text-shadow: 2px 2px rgb(64, 63, 63);
+    border-style:outset;
+}
+
+.rockgenre:hover {
+    border-color:rgb(84, 170, 241);
+}
+
+.altgenre {
+    font-size: 30px;
+    padding-top: 100px;
+    padding-right:400px;
+    padding-left: 280px;
+    justify-content: space-between;
+    text-shadow: 2px 2px rgb(64, 63, 63);
+    border-style:outset;
+}
+
+.altgenre:hover {
+    border-color:rgb(30, 159, 30);
+}
+
+.soulgenre {
+    font-size: 30px;
+    padding-top: 100px;
+    padding-right:400px;
+    padding-left: 280px;
+    justify-content: space-between;
+    text-shadow: 2px 2px rgb(64, 63, 63);
+    border-style:outset;
+}
+
+.soulgenre:hover {
+    border-color:rgb(255, 140, 0);
+}
+
+.indiegenre {
+    font-size: 30px;
+    padding-top: 100px;
+    padding-right:400px;
+    padding-left: 280px;
+    justify-content: space-between;
+    text-shadow: 2px 2px rgb(64, 63, 63);
+    border-style:outset;
+}
+
+.indiegenre:hover {
+    border-color:blue;
+}
+
+.electronicgenre {
+    font-size: 30px;
+    padding-top: 100px;
+    padding-right:400px;
+    padding-left: 280px;
+    justify-content: space-between;
+    text-shadow: 2px 2px rgb(64, 63, 63);
+    border-style:outset;
+}
+
+.electronicgenre:hover {
+    border-color:yellow;
+}
+
+.dancegenre {
+    font-size: 30px;
+    padding-top: 100px;
+    padding-right:400px;
+    padding-left: 280px;
+    justify-content: space-between;
+    text-shadow: 2px 2px rgb(64, 63, 63);
+    border-style:outset;
+}
+
+.dancegenre:hover {
+    border-color:rgb(242, 35, 101);
+}
+
+.jazzgenre {
+    font-size: 30px;
+    padding-top: 100px;
+    padding-right:400px;
+    padding-left: 280px;
+    justify-content: space-between;
+    text-shadow: 2px 2px rgb(64, 63, 63);
+    border-style:outset;
+}
+
+.jazzgenre:hover {
+    border-color:purple;
+}
+
+.rapgenre {
+    font-size: 30px;
+    padding-top: 100px;
+    padding-right:400px;
+    padding-left: 280px;
+    justify-content: space-between;
+    text-shadow: 2px 2px rgb(64, 63, 63);
+    border-style:outset;
+}
+
+.rapgenre:hover {
+    border-color:rgb(189, 0, 0);
+}
+
+.enterbutton {
+    margin-left: 700px;
+    flex-direction: column;
+    display: inline-flex;
+    font-size: 2rem;
+    /* font-size: 80px; */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.squaretext a {
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#2eabce;
+    border-style:dotted;
+    border-color: #2eabce;
+    height: 20px;
+    width: 50px;
+}
+
+
+/* .commentarea {
+    margin-top: 600px;
+    margin-left: 500px;
+}
+
+button {
+    margin-left: 700px;
+}
+*/
